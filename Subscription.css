@@ -1,0 +1,94 @@
+/* src/Subscription.css */
+
+.subscription-container {
+  padding: 40px; /* Increased padding for more breathing space */
+  background: linear-gradient(to right, #f0f4ff, #e3f2fd); /* Softer gradient for a pleasant feel */
+  min-height: 100vh; /* Ensure it covers full height */
+  text-align: center;  
+}
+
+.hero-section {
+  padding: 60px 0; /* More space for the hero section */
+  background-color: #4a90e2; /* Keep the background color consistent */
+  color: white; /* Keep text color white for readability */
+  border-bottom: 5px solid #e0e0e0; /* Add a bottom border for separation */
+}
+
+.subscription-title {
+  font-size: 2.8rem; /* Increased font size for prominence */
+  margin-bottom: 15px; /* More space below the title */
+  font-weight: bold; /* Bold title for emphasis */
+}
+
+.subscription-description {
+  font-size: 1.4rem; /* Slightly larger font size for description */
+  margin-bottom: 40px; /* Space below description */
+  color: #ececec; /* Lighter color for a softer look */
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Added gap for spacing between cards */
+  margin-top: 20px; /* Space above pricing section */
+}
+
+.pricing-card {
+  background-color: #ffffff; /* White background for contrast */
+  border: 1px solid #e0e0e0; /* Light border for separation */
+  border-radius: 15px; /* More rounded corners */
+  padding: 30px; /* Increased padding for a more spacious feel */
+  margin: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.price {
+  font-size: 1.8rem; /* Larger price font for visibility */
+  margin: 20px 0;
+  color: #4a90e2; /* Accent color for prices */
+}
+
+.subscribe-button {
+  padding: 12px 24px; /* Slightly larger padding */
+  background-color: #4a90e2; /* Keep primary button color */
+  color: white; /* White text for contrast */
+  border: none; /* No border for a cleaner look */
+  border-radius: 8px; /* Slightly more rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  font-size: 1.1rem; /* Adjust font size */
+}
+
+.subscribe-button:hover {
+  background-color: #357ab7; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pricing-card {
+    width: 100%; /* Full width on small screens */
+    margin: 10px 0; /* Add margin between items */
+  }
+
+  .subscription-container {
+    padding: 20px; /* Reduced padding for mobile */
+  }
+
+  .subscription-title {
+    font-size: 2.5rem; /* Smaller title on mobile */
+  }
+
+  .subscription-description {
+    font-size: 1.2rem; /* Smaller description on mobile */
+  }
+}

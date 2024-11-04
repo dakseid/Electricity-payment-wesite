@@ -1,0 +1,112 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e9eff1; /* Soft background color */
+}
+
+.payment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.payment-form {
+  background-color: #ffffff; /* White background for form */
+  border-radius: 12px; /* More rounded corners */
+  padding: 40px; /* Increased padding for spacious feel */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  max-width: 400px;
+  width: 100%;
+}
+
+.payment-title {
+  font-size: 2rem; /* Larger title */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+  font-weight: 700; /* Bolder title */
+}
+
+.payment-form label {
+  font-size: 1.1rem; /* Slightly larger label font */
+  color: #555; /* Softer color for labels */
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 14px; /* Increased padding for inputs */
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* More rounded input corners */
+  background-color: #f5f5f5; /* Light grey background */
+  font-size: 1rem;
+  transition: border-color 0.3s, background-color 0.3s; /* Added background transition */
+}
+
+.payment-form input:focus {
+  border-color: #4a90e2; /* Focus border color */
+  outline: none;
+  background-color: #ffffff; /* White background on focus */
+}
+
+.payment-button {
+  width: 100%;
+  padding: 14px 20px; /* Increased button padding */
+  background-color: #4a90e2; /* Calming blue */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px; /* More rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
+  margin-top: 1rem;
+}
+
+.payment-button:hover {
+  background-color: #357ab7; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.payment-button:focus {
+  background-color: #3e8bdb; /* Button focus effect */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect on focus */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .payment-form {
+      padding: 30px; /* Adjusted padding for smaller screens */
+  }
+
+  .payment-title {
+      font-size: 1.7rem; /* Adjusted title size for smaller screens */
+  }
+
+  .payment-form input {
+      padding: 12px; /* Adjusted input padding */
+  }
+
+  .payment-button {
+      font-size: 1rem; /* Adjusted button font size */
+  }
+}
+
+/* Additional Styles */
+.payment-button:disabled {
+  background-color: #ccc; /* Greyed out color for disabled state */
+  cursor: not-allowed; /* Cursor style for disabled state */
+}
+
+.payment-form input::placeholder {
+  color: #aaa; /* Placeholder text color */
+}
+
+.payment-button:disabled:hover {
+  background-color: #ccc; /* Prevent hover effect on disabled button */
+}
